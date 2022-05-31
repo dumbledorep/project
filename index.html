@@ -1,27 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="styles.css" />
+   <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      
+    />
   </head>
-
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<h1> Hello World </h1>
+    <div id="page-wrapper">
+      <header id="header" >
+        <div class="logo">
+          <img
+            id="header-img"
+            src="avatar.jpg"   alt="unable to display header image"
+          />
+        </div>
 
-    <!--
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Home</a></li>
+            <li><a class="nav-link" href="#features">About</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    Hello Camper!
+      <div class="container"></div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <section id="hero">
+        <h2>Furniture, locally made</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" id="email" type="email" placeholder="Enter  email for   update" required />
+          <input id="submit" type="submit" value="submit" class="btn" />
+        </form>
+      </section>
 
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Classic Furniture </h2>
+              <p>
+                We make your house a home if you give us the chance 
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla voluptate
+                  corrupti explicabo veritatis illum voluptatibus, ad accusamus doloremque non, 
+                  architecto itaque reiciendis delectus quas maiores quibusdam ipsum quia natus?.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Evaluation</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla voluptate
+                 corrupti explicabo veritatis illum voluptatibus, ad accusamus doloremque non, 
+                 architecto itaque reiciendis delectus quas maiores quibusdam ipsum quia natus?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe controls
+            id="video"
+            height="315"
+            src="videoo.mp4"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">lorem set</div>
+            <h2>$1000</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">ipsum set</div>
+            <h2>$800</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Furnitur set</div>
+            <h2>$1200</h2>
+            <ol>
+              <li>Cushion set</li>
+              <li>Furniture set</li>
+              <li>Colorr</li>
+              <li>Grade</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Condition</a></li>
+          </ul>
+          <span>Copyright 2022, Furniture Empire</span>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
